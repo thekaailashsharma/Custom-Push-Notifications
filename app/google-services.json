@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "1055081790867",
+    "project_id": "waste2wealth-v2",
+    "storage_bucket": "waste2wealth-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055081790867:android:d4cafb34c8d9efe4d17c66",
+        "android_client_info": {
+          "package_name": "custom.push.notifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055081790867-crlj92qi0l5uvptctrm1g5hj7htfnp54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "custom.push.notifications",
+            "certificate_hash": "fd53562d082592940490b430b2c8266248ee095f"
+          }
+        },
+        {
+          "client_id": "1055081790867-58753m4f8ii68enihvr329gpabdktrq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRPEKLMu6Jx6NtB-iuReJM3UNzpb4x19c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055081790867-58753m4f8ii68enihvr329gpabdktrq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055081790867:android:b1bb445e0abb201ed17c66",
+        "android_client_info": {
+          "package_name": "enrich.waste.adminpage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055081790867-58753m4f8ii68enihvr329gpabdktrq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRPEKLMu6Jx6NtB-iuReJM3UNzpb4x19c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055081790867-58753m4f8ii68enihvr329gpabdktrq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
