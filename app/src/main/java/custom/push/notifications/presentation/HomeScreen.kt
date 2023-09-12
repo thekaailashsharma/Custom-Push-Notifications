@@ -1,5 +1,6 @@
 package custom.push.notifications.presentation
 
+import android.widget.Toast
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -41,6 +42,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -95,6 +97,7 @@ fun HomeScreen(mainViewModel: MainViewModel) {
 
                     }
                 }
+                val context = LocalContext.current
                 DialogBox(
                     isVisible = isDialogVisible.value,
                     mainViewModel = mainViewModel,
@@ -104,6 +107,15 @@ fun HomeScreen(mainViewModel: MainViewModel) {
                             message = mainViewModel.notificationDescription.value.text,
                             token = currentToken.value
                         )
+                        Toast.makeText(
+                            context,
+                            "Notification Sent Successfully",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        isDialogVisible.value = false
+                        mainViewModel.notificationTitle.value = TextFieldValue("")
+                        mainViewModel.notificationDescription.value = TextFieldValue("")
+                        currentToken.value = ""
                     }
                 ) {
                     isDialogVisible.value = false
